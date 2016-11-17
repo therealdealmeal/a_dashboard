@@ -1,0 +1,4 @@
+bower_components/**
+node_modules/**
+ip_address.txt
+.DS_Store

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Create Duck</title>
+  </head>
+  <body>
+    <h1>All of the Ducks</h1>
+
+
+    <a href="/new">Create a new Duck</a>
+
+    <% for (var xx in ducks) { %>
+      <p>Name: <a href="/<%= ducks[xx]._id %>"><%= ducks[xx].name %></a><br>
+      </p>
+      <p>Age: <%= ducks[xx].age %></p>
+      <a href="/<%= ducks[xx]._id %>/edit/">Edit <%= ducks[xx].name %></a>
+      <form action="/<%= ducks[xx]._id %>/destroy" method='post'>
+        <input type="submit" value="Delete">
+      </form>
+      <hr>
+    <% } %>
+  </body>
+</html>

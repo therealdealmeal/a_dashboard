@@ -1,0 +1,9 @@
+  <h1>Name: <%=ducks.name%></h1><br>
+  <h2>Name: <%=ducks.age%></h2>
+
+
+  <a href="/" type="submit">Home</a><br><br>
+
+  <form action="/<%=ducks._id%>/destroy" method='post'>
+    <input type="submit" value="Delete">
+  </form>

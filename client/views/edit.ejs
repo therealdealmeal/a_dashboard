@@ -1,0 +1,6 @@
+<form action="/<%=ducks._id%>/update" method="post">
+  <input type="hidden" value="<%=ducks%>" name="duck">
+  <input type="text" name="name" value="<%=ducks.name%>">
+  <input type="number" name="age" value="<%=ducks.age%>">
+  <input type="submit" value="Update Duck">
+</form>
